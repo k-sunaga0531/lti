@@ -36,18 +36,23 @@ if (height >= 170) {
 　　（条件が満たされれば、実行は終わる）
 ①:while
 ⑴:while構文
+　..ブロックを実行する前に条件式を評価する
+ 　（条件結果falseだった場合、一度も実行されない）
 while (temp > 25) {
   temp--;
   System.out.println("温度を1度下げました");
 }
 
 ⑵:do-while構文
+　..ブロックを実行した後に条件式を評価する
+ 　（条件結果falseだった場合でも、最低一度は実行される）
 do {
   temp--;
   System.out.println("温度を1度下げました");
 } while (temp > 25);
 
 ②:for
+　..ある条件が成立するまで繰り返す
 for (int i = 0; i < 10; i++) {
   System.out.println("こんにちは");
 }
