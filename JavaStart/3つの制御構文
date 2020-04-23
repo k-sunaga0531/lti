@@ -4,24 +4,24 @@
 3,繰り返し
 
 1,順次
-上から順に、一行ずつ実行していく構文
+　..上から順に、一行ずつ実行していく構文
 
 2,分岐
-条件によって、実行が変わる構文
+　..条件によって、実行が変わる構文
 ①:if-else構文
-if (age >= 20){
+if (age >= 20) {
   canSmoke = true;
 } else {
   canSmoke = false;
 }
 
 ②:ifのみの構文
-if (age >= 20){
+if (age >= 20) {
   canSmoke = true;
 }
 
 ③:if-else if-if構文
-if (height >= 170){
+if (height >= 170) {
   size = 'L';
 } else if(height >= 155) {
   size = 'M';
@@ -32,10 +32,22 @@ if (height >= 170){
 }
 
 3,繰り返し
-条件が成立している限り、実行を繰り返す構文
-（条件が満たされれば、実行は終わる）
+　..条件が成立している限り、実行を繰り返す構文
+　　（条件が満たされれば、実行は終わる）
 ①:while
 ⑴:while構文
+while (temp > 25) {
+  temp--;
+  System.out.println("温度を1度下げました");
+}
+
 ⑵:do-while構文
+do {
+  temp--;
+  System.out.println("温度を1度下げました");
+} while (temp > 25);
 
 ②:for
+for (int i = 0; i < 10; i++) {
+  System.out.println("こんにちは");
+}
