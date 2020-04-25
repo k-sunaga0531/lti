@@ -1,5 +1,6 @@
 配列
 ：同一種類の複数データを並び順で格納する、データ構造
+:複数データの中の、単一データを要素と呼ぶ
 
 ・配列の作成
 Step1,配列変数の宣言
@@ -10,19 +11,45 @@ Step2,要素の作成と代入
 public class Main {
   public static void main(String[] args) {
     int[] scores;
-    scores = new int[5]
+    scores = new int[5];
   }
 }
 
 又は
-
 Step1,2を、同時に行うことも可能
 
 public class Main {
   public static void main(String[] args) {
-    int[] scores = new int[5]
+    int[] scores = new int[5];
   }
 }
 
 
-・配列の利用方法
+・要素への代入
+public class Main {
+  public static void main(String[] args) {
+    int[] scores = new int[5];
+    scores[0] = 0;
+    scores[1] = 10;
+    scores[2] = 20;
+    scores[3] = 30;
+    scores[4] = 40;
+    System.out.println(scores[1]);
+  }
+}
+
+又は
+配列の作成と要素への代入を、同時に行うことも可能。（2種類の記法がある）
+上段：要素の型[] 配列変数名 = new 要素の型[] {値1, 値2, 値3, ...};
+下段：要素の型[] 配列変数名 = {値1, 値2, 値3, ...};
+
+public class Main {
+  public static void main(String[] args) {
+    int[] scores1 = new int[] {0, 10, 20, 30, 40};
+    System.out.println(scores1[1]);
+    
+    int[] scores2 = {0, 10, 20, 30, 40};
+    System.out.println(scores2[1]);
+  }
+}
+
