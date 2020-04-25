@@ -1,0 +1,28 @@
+配列
+：同一種類の複数データを並び順で格納する、データ構造
+
+・配列の作成
+Step1,配列変数の宣言
+ (要素の型[] 配列変数名)
+Step2,要素の作成と代入
+ （配列変数名 = new 要素の型[要素の個数]）
+
+public class Main {
+  public static void main(String[] args) {
+    int[] scores;
+    scores = new int[5]
+  }
+}
+
+又は
+
+Step1,2を、同時に行うことも可能
+
+public class Main {
+  public static void main(String[] args) {
+    int[] scores = new int[5]
+  }
+}
+
+
+・配列の利用方法
