@@ -1,0 +1,45 @@
+メソッドとは、複数の文をまとめ、一つの処理として名前をつけたもの
+
+メソッドを使用する2ステップ
+　メソッドを使用するには、まず「①メソッドを定義（作成）」し、次に「②作成したメソッドを呼び出す」必要がある。
+ 
+①メソッドの定義
+　public static 戻り値の型 メソッド名(引数リスト) {
+   メソッドが呼び出された時に実行される具体的な処理
+ }
+
+*戻り値とは:呼び出されたメソッドから、呼び出し元のメソッドへと返された値のこと
+*戻り値の型:[int]数字,[String]文字,[void]何も戻さない
+
+ public static void hello() {
+   System.out.println("山田さん、こんにちは");
+ }
+  
+  
+ ②メソッドの呼び出し
+メソッド名(引数リスト)
+
+ public class Main {
+  public static void main(String[] args) {
+    System.out.println("以下の一行で、helloメソッドを呼び出します");
+    hello();
+    System.out.println("helloメソッドの呼び出しが終わりました");
+  }
+  
+  
+①＋②
+ public class Main {
+  public static void main(String[] args) {
+    System.out.println("以下の一行で、helloメソッドを呼び出します");
+    hello();
+    System.out.println("helloメソッドの呼び出しが終わりました");
+  }
+  public static void hello() {
+    System.out.println("山田さん、こんにちは");
+  }
+}
+
+出力：
+ 以下の一行で、helloメソッドを呼び出します
+ 山田さん、こんにちは
+ helloメソッドの呼び出しが終わりました
